@@ -18,6 +18,7 @@ ROLES = {
 
 
 PERMISSIONS = {
+
     "user":{
         "view_dashboard"
     },
@@ -42,3 +43,8 @@ PERMISSIONS = {
     
 
 }
+
+
+GLOBAL_INPUT = ["1", "2"] #temporary
+
+
