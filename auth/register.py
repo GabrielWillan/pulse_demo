@@ -1,12 +1,31 @@
-import pyconfig
+from account.save_account import save_accounts
+from settings.pyconfig import Configuration
 
-while True:
-    choice_input = input("yes or no")
+save = save_accounts()
+config_pack = Configuration()
 
-    if choice_input == pyconfig.GLOBAL_INPUT[0]:
-        print("config worked you pressed 1")
-    else:
-        print("just a placement")
+def register_account():
+    first_name_input = input("Enter First name: ")
+    last_name_input = input("Enter Last name: ")
+    username_input = input("Enter username: ")
+    password_input = input ("Enter Password: ")
+
+    return{"first_name":first_name_input, "last_name":last_name_input, "username":username_input, "password":password_input}
+
+
+
+register = register_account()
+save.saved_accounts(register)
+
+
+
+
+
+
+
+
+
+
 
 
 

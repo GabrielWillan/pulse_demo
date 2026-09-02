@@ -48,3 +48,25 @@ PERMISSIONS = {
 GLOBAL_INPUT = ["1", "2"] #temporary
 
 
+class Configuration:
+    def __init__(self):
+        self.app_name = APP_NAME
+        self.app_version = APP_VERSION
+        self.max_login_attempt = MAX_LOGIN_ATTEMPT
+        self.login_cooldown = LOGIN_COOLDOWN
+        self.max_username_len = MAX_USERNAME_LEN
+        self.minimum_username_len = MINIMUM_USERNAME_LEN
+        self.max_password_len = MAX_PASSWORD_LEN
+        self.minumum_password_len = MINIMUM_PASSWORD_LEN
+        self.roles = ROLES
+        self.permissions = PERMISSIONS
+        self.global_input = GLOBAL_INPUT
+    
+
+
+
+
+
+
+
+
